@@ -1,0 +1,6 @@
+<!--pages/registrationNote/registrationNote.wxml-->
+<view class="texttitle" style="font-size: 11pt;">用户须知</view>
+<view class="text">{{note}}</view>
+
+  <button style="width:50%;padding-left:0;padding-top:8px;padding-right:0;padding-bottom:8px;position:fixed;left:0;bottom:0;background-color:lightgray;font-size:11pt;border-radius:0;">不同意</button>
+  <button class="button" bindtap="toLogin" style="width:50%;padding-left:0;padding-top:8px;padding-right:0;padding-bottom:8px;position:fixed;right:0;bottom:0;font-size:11pt;border-radius:0;background-color:#47bafe;color:white;">我已阅读并同意</button>

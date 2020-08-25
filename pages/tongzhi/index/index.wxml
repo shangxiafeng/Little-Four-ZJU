@@ -1,0 +1,15 @@
+<!--pages/tongzhi/index/index.wxml-->
+<navigator url="/pages/tongzhi/detail/li/li"> <image src="/../images/头像.png"></image>
+<view>李医生</view>
+<view>您好，请问有什么需要帮助吗？</view>
+</navigator>
+
+
+<navigator url="/pages/tongzhi/detail/wang/wang"> <image src="/../images/头像.png"></image>
+<view>王医生</view>
+<view>你好</view></navigator>
+
+
+<navigator url="/pages/tongzhi/detail/xitong/xitong"> <image src="/../images/通知.jfif"></image>
+<view>系统通知</view>
+<view>用药提醒</view></navigator>

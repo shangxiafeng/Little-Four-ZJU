@@ -1,0 +1,36 @@
+<!--pages/myMedicalRecords/myMedicalRecords.wxml-->
+
+<view class='nav bg-gradual-blue' style='height:{{navH}}px'>
+    <view class='nav-title'>
+      我的病历
+      <image src='../../images/fanhui.png' mode='aspectFit' class='back' bindtap='navBack' style="width:52px;height:42px;"></image>
+    </view>
+</view>
+
+<view style=" margin-top:{{navH}}px; font-size:32rpx; ">{{year}}年{{month}}月{{day}}日</view>
+<block>
+  <view>
+    <view class="class1">{{hospital}}\n</view>
+      <text class="class2">第{{number}}次入院\t 　　</text>
+      <text class="class2">{{department}}入院记录\t 　　</text>
+      <text class="class2">住院号:{{hospitalNumber}}\n</text>
+    <text>姓名：{{name}}\t</text>
+    <text>工作单位：{{workPlace}}\n</text>
+    <text>性别：{{gender}}\t　</text>
+    <text>住址：{{address}}\n</text>
+    <text>年龄：{{age}}\t　</text>
+    <text>入院日期：{{admissionDate}}\n</text>
+    <text>职业：{{work}}\t</text>
+    <text>病例采集日期：{{caseCollectionDate}}\n</text>
+    <text>籍贯：{{nativePlace}}\t</text>
+    <text>病历供述人：{{caseSpeaker}}\n</text>
+    <text>民族:{{nation}}\t</text>
+    <text>婚姻状态：{{maritalStatus}}\n</text>
+  </view>
+  <view>
+    <text>主诉：{{chiefComplaint}}\n</text>
+    <text>现病史：{{hpi}}</text>
+  </view>
+</block>
+
+

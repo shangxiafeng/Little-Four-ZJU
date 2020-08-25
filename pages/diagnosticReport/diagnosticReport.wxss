@@ -1,0 +1,4 @@
+/* pages/diagnosticReport/diagnosticReport.wxss */
+.class1{
+  font-size: smaller;
+}

@@ -1,0 +1,97 @@
+<!--ByShanxiafeng-->
+<view class='nav bg-gradual-blue' style='height:{{navH}}px'>
+	<view class='nav-title'>
+		选择日期
+		<image src='../../images/fanhui.png' mode='aspectFit' class='back' bindtap='navBack' style="width:52px;height:42px;"></image>
+	</view>
+</view>
+
+
+<scroll-view class="navx" scroll-x="true" scroll-left="{{scrollLeft}}" style=" margin-top:{{navH}}px">
+	<block wx:for="{{dateTitles}}" wx:for-index="idx" wx:key="idex">
+		<view class="navx-item {{currentIndex==idx ? 'active' : ''}}" data-current="{{idx}}" bindtap="changeTitle">
+			{{item.title}}</view>
+	</block>
+</scroll-view>
+
+
+<swiper class="content-container" current="{{currentIndex}}" circular="{{false}}" bindchange="changeContent" style="padding-top:{{0.001*navH}}px">
+	<swiper-item class="padding-xl radius shadow bg-white" style="padding:0;margin-top:0;">
+		<view class="cu-form-group">
+			<view class="title">挂号类</view>
+			<view>普通号</view>
+		</view>
+		<view class="cu-form-group">
+			<view class="title" style="padding-top:38rpx;font-size=33rpx " >{{xshowDate}}</view>
+			<navigator url='../registrationPeriod/registrationPeriod'>
+				<button size="mini" type="primary" style="width:30%;font-size:25rpx;position:absolute;right:54rpx; background-color: #98d9fffe; ">前往挂号</button></navigator>
+		</view>
+
+	</swiper-item>	<swiper-item class="padding-xl radius shadow bg-white" style="padding:0;margin-top:0;">
+		<view class="cu-form-group">
+			<view class="title">挂号类</view>
+			<view>普通号</view>
+		</view>
+		<view class="cu-form-group">
+			<view class="title" style="padding-top:38rpx;padding-left:38rpx;font-size=33rpx " >{{xshowDate}}</view>
+			<navigator url='../registrationPeriod/registrationPeriod'>
+				<button size="mini" type="primary" style="width:30%;font-size:30rpx;position:absolute;right:54rpx; background-color: #98d9fffe; ">前往挂号</button></navigator>
+		</view>
+
+	</swiper-item>	<swiper-item class="padding-xl radius shadow bg-white" style="padding:0;margin-top:0;">
+		<view class="cu-form-group">
+			<view class="title">挂号类</view>
+			<view>普通号</view>
+		</view>
+		<view class="cu-form-group">
+			<view class="title" style="padding-top:38rpx;padding-left:38rpx;font-size=33rpx " >{{xshowDate}}</view>
+			<navigator url='../registrationPeriod/registrationPeriod'>
+				<button size="mini" type="primary" style="width:30%;font-size:30rpx;position:absolute;right:54rpx; background-color: #98d9fffe; ">前往挂号</button></navigator>
+		</view>
+
+	</swiper-item>	<swiper-item class="padding-xl radius shadow bg-white" style="padding:0;margin-top:0;">
+		<view class="cu-form-group">
+			<view class="title">挂号类</view>
+			<view>普通号</view>
+		</view>
+		<view class="cu-form-group">
+			<view class="title" style="padding-top:38rpx;padding-left:38rpx;font-size=33rpx " >{{xshowDate}}</view>
+			<navigator url='../registrationPeriod/registrationPeriod'>
+				<button size="mini" type="primary" style="width:30%;font-size:30rpx;position:absolute;right:54rpx; background-color: #98d9fffe; ">前往挂号</button></navigator>
+		</view>
+
+	</swiper-item>	<swiper-item class="padding-xl radius shadow bg-white" style="padding:0;margin-top:0;">
+		<view class="cu-form-group">
+			<view class="title">挂号类</view>
+			<view>普通号</view>
+		</view>
+		<view class="cu-form-group">
+			<view class="title" style="padding-top:38rpx;padding-left:38rpx;font-size=33rpx " >{{xshowDate}}</view>
+			<navigator url='../registrationPeriod/registrationPeriod'>
+				<button size="mini" type="primary" style="width:30%;font-size:30rpx;position:absolute;right:54rpx; background-color: #98d9fffe; ">前往挂号</button></navigator>
+		</view>
+
+	</swiper-item>	<swiper-item class="padding-xl radius shadow bg-white" style="padding:0;margin-top:0;">
+		<view class="cu-form-group">
+			<view class="title">挂号类</view>
+			<view>普通号</view>
+		</view>
+		<view class="cu-form-group">
+			<view class="title" style="padding-top:38rpx;padding-left:38rpx;font-size=33rpx " >{{xshowDate}}</view>
+			<navigator url='../registrationPeriod/registrationPeriod'>
+				<button size="mini" type="primary" style="width:30%;font-size:30rpx;position:absolute;right:54rpx; background-color: #98d9fffe; ">前往挂号</button></navigator>
+		</view>
+
+	</swiper-item>	<swiper-item class="padding-xl radius shadow bg-white" style="padding:0;margin-top:0;">
+		<view class="cu-form-group">
+			<view class="title">挂号类</view>
+			<view>普通号</view>
+		</view>
+		<view class="cu-form-group">
+			<view class="title" style="padding-top:38rpx;padding-left:38rpx;font-size=33rpx " >{{xshowDate}}</view>
+			<navigator url='../registrationPeriod/registrationPeriod'>
+				<button size="mini" type="primary" style="width:30%;font-size:30rpx;position:absolute;right:54rpx; background-color: #98d9fffe; ">前往挂号</button></navigator>
+		</view>
+
+	</swiper-item>
+</swiper>

@@ -1,0 +1,9 @@
+/* pages/evaluation/evaluation.wxss */
+
+.input{
+  width: 90%;
+  margin: 0 auto;
+  height: 300px;
+  line-height: 44px;
+  border: 1px  solid rgb(156, 187, 183);
+}

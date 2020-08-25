@@ -1,0 +1,41 @@
+{
+  "pages": [   
+    "pages/firstPage/firstPage",
+    "pages/chat/chat",
+    "pages/registrationPeriod/registrationPeriod",
+    "pages/chooseHospital/chooseHospital",
+    "pages/registrationOrders/registrationOrders",
+    "pages/userPage/userPage",
+    "pages/chooseDepartment/chooseDepartment",
+    "pages/registrationDate/registrationDate",
+    "pages/tongzhi/index/index",
+    "pages/registrationNote/registrationNote",
+    "pages/tongzhi/detail/wang/wang",
+    "pages/tongzhi/detail/li/li",
+    "pages/tongzhi/detail/xitong/xitong",
+    "pages/myMedicalRecords/myMedicalRecords",
+    "pages/diagnosticReport/diagnosticReport",
+    "pages/doctorInfo/doctorInfo",
+    "pages/register/register",
+    "pages/evaluation/evaluation",
+    "pages/index/index",
+    "pages/hospitalDetails/hospitalDetails"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#47bafe",
+    "navigationBarTextStyle": "white",
+    "navigationStyle": "custom"
+  },
+  "plugins": {
+    "chatbot": {
+      "version": "1.2.1",
+      "provider": "wx8c631f7e9f2465e1"
+    },
+    "WechatSI": {
+      "version": "0.3.4",
+      "provider": "wx069ba97219f66d99"
+    }
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

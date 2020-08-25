@@ -1,0 +1,12 @@
+<!--pages/evaluation/evaluation.wxml-->
+<view class='nav bg-gradual-blue' style='height:{{navH}}px'>
+    <view class='nav-title'>
+      医生评价
+      <image src='../../images/fanhui.png' mode='aspectFit' class='back' bindtap='navBack' style="width:52px;height:42px;"></image>
+    </view>
+</view>
+<view style="margin-top:{{navH}}px; font-size:32rpx; " ></view>
+<text >请在下方空格写下您对该医生的评价</text>
+  <view class="input">
+  <input bindinput="inputPhoneNumber" placeholder="请输入您对该医生的评价" confirm-type="可改变"> </input>
+ </view>

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "chat": "plugin://chatbot/chat"
+  },
+  "navigationBarTitleText": "机器人"
+  
+}

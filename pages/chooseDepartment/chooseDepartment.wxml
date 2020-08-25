@@ -1,0 +1,39 @@
+
+
+<view class='nav bg-gradual-blue' style='height:{{navH}}px'>
+    <view class='nav-title'>
+      选择科室
+      <image src='../../images/fanhui.png' mode='aspectFit' class='back' bindtap='navBack' style="width:52px;height:42px;"></image>
+    </view>
+</view>
+
+<view class='swiper_con' wx:if="{{shoppinglist}}">
+  <view class='swiper_con_view' wx:for="{{shoopingarray}}" wx:key="id" wx:if='{{item.status=="1"?true:false}}'>
+    <view style="width:90%;margin:5%;">
+      <text style="font-size:24rpx">{{item.title}}</text>
+    </view>
+  </view>
+</view>
+<view hidden="{{flag}}" bindtap="search" style="margin-top:{{navH}}px">
+  <!--主盒子-->
+    <!--左侧栏-->
+    <view class="nav_left">
+      <view wx:for="{{department}}" wx:key="index">
+        <view class="nav_left_items {{curNav == item.id ? 'active' : ''}}" bindtap="switchRightTab" data-index="{{index}}" data-item="{{item}}">{{item.name}}</view>
+      </view>
+    </view>
+    <!--右侧栏-->
+    <view class="nav_right" style="margin-top:{{navH}}px;" >
+      <!--如果有数据，才遍历项-->
+      <view >
+        <block wx:for="{{department[curIndex].clinic}}" wx:key="index" >
+          <view class="nav_right_items" >
+            <!--界面跳转 -->
+            <view bindtap="toDate" data-clinic='{{item}}' >
+              <text>{{item.name}}</text>
+            </view>
+          </view>
+        </block>
+      </view>
+    </view>
+</view>

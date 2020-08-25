@@ -1,0 +1,10 @@
+{
+  
+  "navigationBarTitleText": "我的挂号",
+  "navigationStyle": "custom",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+
+  }
+
+}

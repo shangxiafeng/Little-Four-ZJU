@@ -1,0 +1,18 @@
+
+<view class='nav bg-gradual-blue' style='height:{{navH}}px'>
+    <view class='nav-title'>
+      选择医院
+      <image src='../../images/fanhui.png' mode='aspectFit' class='back' bindtap='navBack' style="width:52px;height:42px;"></image>
+    </view>
+</view>
+
+<view class="page" style="margin-top:{{navH}}px">
+    <view class="page__bd">
+        <mp-searchbar bindselectresult="selectResult" search="{{search}}"></mp-searchbar>
+    </view>
+</view>
+<view  class="cu-form-group" style="font-size:12pt;height:122rpx;" wx:for="{{hospital}}" >
+    <view >{{item.name}}
+    <view bindtap="toHospitalDetails" data-item='{{item}}'  style="color:lightblue;">查看详情</view></view>
+    <button bindtap="toDepartment" data-item='{{item}}' style="width:30%;font-size:9pt;position:absolute;right:10px;background-color:lightblue;color:GhostWhite" >前往挂号</button>
+</view>

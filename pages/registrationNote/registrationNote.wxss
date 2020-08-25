@@ -1,0 +1,10 @@
+/* pages/registrationNote/registrationNote.wxss */
+.texttitle{
+  text-align: center;
+  padding: 30rpx;
+}
+.text{
+  padding:0 18rpx;
+  margin-bottom: 50px;
+  line-height: 1.5;
+}

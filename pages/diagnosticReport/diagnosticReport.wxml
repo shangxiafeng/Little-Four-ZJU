@@ -1,0 +1,15 @@
+
+<!--pages/diagnosticReport/diagnosticReport.wxml-->
+<view class='nav bg-gradual-blue' style='height:{{navH}}px'>
+    <view class='nav-title'>
+      诊断报告
+      <image src='../../images/fanhui.png' mode='aspectFit' class='back' bindtap='navBack' style="width:52px;height:42px;"></image>
+    </view>
+</view>
+
+{{year}}-{{month}}-{{day}}
+<text class="class1">已为您生成预报告\n</text>
+<view>主治医生：{{doctor}}</view>
+<view>诊断病症：{{diagnoseDisease}}</view>
+<view>临床病症: {{clinicalSymptom}}</view>
+<view>治疗方案: {{treatmentOption}}</view>

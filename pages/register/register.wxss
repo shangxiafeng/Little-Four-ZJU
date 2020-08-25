@@ -1,0 +1,31 @@
+
+.input{
+  width: 90%;
+  margin: 0 auto;
+  height: 44px;
+  line-height: 44px;
+  border: 1px  solid rgb(156, 187, 183);
+}
+.abc {
+  position: relative;
+  border: 0rpx;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0 0;
+  font-size: 28rpx;
+  height: 64rpx;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  overflow: visible;
+  margin-left: initial;
+  transform: translate(0rpx, 0rpx);
+  margin-right: initial;
+}
+.gh{
+  background-color: #5dbff8fe;
+  padding: 10px;
+  margin-right: 20px;
+}

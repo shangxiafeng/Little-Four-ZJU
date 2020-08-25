@@ -1,0 +1,21 @@
+/* pages/1/1.wxss */
+
+page{
+  min-height:100%;
+  
+}
+.background {
+  width: 100%;
+  min-height: 100%;
+  position:fixed; 
+  background-size:100% 100%;
+  z-index: -1;
+}
+page {
+  overflow:hidden;
+  position:fixed;
+  background-image:url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1597876039564&di=2b15b07f66ce97ebc52703ea44fafad1&imgtype=0&src=http%3A%2F%2Fhbimg.huabanimg.com%2Fbd5a5c8eefc31d7eebaf15304bded4fa79a9707d261f0-CfymvR_fw658');
+  margin: 0px;
+  /*下面的是关键的设置100%显示*/
+  background-size: 100% 100%;
+  }

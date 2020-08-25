@@ -1,0 +1,88 @@
+/* pages/registrationPeriod/registrationPeriod.wxss */
+@font-face {
+  font-family: 'iconfont';  /* project id 1997190 */
+  src: url('//at.alicdn.com/t/font_1997190_3ywu9wru8ds.eot');
+  src: url('//at.alicdn.com/t/font_1997190_3ywu9wru8ds.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1997190_3ywu9wru8ds.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1997190_3ywu9wru8ds.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1997190_3ywu9wru8ds.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1997190_3ywu9wru8ds.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family: 'iconfont';
+  color: black;
+  font-size: 30px;
+}
+.icon-doctor::before{
+  content:'\e6fa';
+}
+
+/*挂号选择时间*/
+.time{
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0 auto;
+  margin-top: 30rpx;
+  margin-bottom: 36rpx;
+ }
+ .time .listItem{
+  width: 25%;
+  height: 135rpx;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: lightblue;
+  padding-top: 35rpx;
+  border: 1px solid white;
+ }
+ .time .listItem text{
+  display: block;
+  font-size: 30rpx;
+ }
+ .time .current text{
+  color: whitesmoke;
+ }
+ .time .black {
+   background-color: rgb(136, 129, 129);
+ }
+ /* .time .chosen  {
+  background-color: #940505;
+  display: block;
+  font-size: 30rpx;
+  width: 25%;
+  height: 135rpx;
+  text-align: center;
+  box-sizing: border-box;
+
+  padding-top: 35rpx;
+  border: 1px solid white;
+ } */
+/*class='operate'*/
+.operate{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  width: 100%;
+  padding: 30rpx 0;
+  background-color: transparent;
+  bottom: 0;
+}
+.operate button{
+  width:300rpx;
+  height: 88rpx;
+  background-color: transparent;
+ }
+ .operate button::after{
+  border: 2px solid #e54449;
+ }
+
+ .operate button:nth-child(2):after{
+  border: 2px solid #e54449;
+ }
+ .operate .save{
+  color: white;
+  background-color: green; 
+  bottom: 0;
+  text-align: center;
+ }

@@ -1,0 +1,12 @@
+<view style="height:100vh;">
+	<view class='nav bg-gradual-blue' style='height:{{navH}}px'>
+		<view class='nav-title'>
+			个人主页
+			<image src='/images/zhuye.png' mode='aspectFit' class='back' bindtap='toUserPageOrRegister' style="width:120rpx;height:102rpx;"></image>
+		</view>
+	</view>
+
+	<view style="margin-top:30rpx">
+		<chat bind:queryCallback="getQueryCallback" bind:openWebview="openWebview" bind:openMiniProgram="openMiniProgram" />
+	</view>
+</view>*

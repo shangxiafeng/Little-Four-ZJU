@@ -1,0 +1,65 @@
+<!--pages/registrationPeriod/registrationPeriod.wxml-->
+<view class='nav bg-gradual-blue' style='height:{{navH}}px'>
+    <view class='nav-title'>
+      选择时段
+      <image src='../../images/fanhui.png' mode='aspectFit' class='back' bindtap='navBack' style="width:52px;height:42px;"></image>
+    </view>
+</view>
+
+<view style=" margin-top:{{navH}}px">
+
+	<view class="cu-form-group">
+		<view class="title">就诊院区</view>
+		<text >{{hospitalName}}</text>
+	</view>
+
+  <view class="cu-form-group">
+		<view class="title">门诊</view>
+		<text >{{clinicName}}</text>
+	</view>
+  
+
+	<view class="cu-form-group">
+		<view class="title">就诊时间
+		</view>
+		<text >{{date}}</text>
+	</view>
+	<view class="cu-form-group">
+		<view class="title">挂号|诊疗费</view>
+		<text >{{cost}}</text>
+	</view>
+</view>
+
+<view>
+  <view class="cu-form-group margin-top">
+		<view class="title">就诊人</view>
+		<text >{{userName}}</text>
+	</view>
+	<view class="cu-form-group">
+		<view class="title">挂号种类 | 专家名字:</view>
+		<text >{{doctorName}}</text>
+	</view>
+</view>
+
+<view class="time" scroll-y="true">
+	<block wx:if="{{hour}}>=12">
+		<view wx:for="{{AllDayOrder}}" 
+
+		 wx:for-item="timeItem"
+		  wx:for-index="timeIndex" 
+			data-Tindex="{{timeIndex }}" 
+			data-time="{{timeItem.time}}" data-id=" {{timeItem.id}}" bindtap='selectTime' 
+			class='listItem {{ currentArrayIndex==timeIndex&timeItem.value==1? "current":"" }}{{timeItem.value==0? "black":""}}'
+
+			 wx:key=''>
+		<view data-item='{{timeItem}}' bindtap="changetoSuccess" >
+			<text>{{timeItem.time}}</text>
+			<text>余{{timeItem.value}}</text>
+	</view>
+		</view>
+	</block>
+</view>
+<view class='operate'>
+	<button class='save' bindtap="change" style="position:fixed">确定</button>
+</view>
+			<!-- class='{{timeItem.value==0? "chosen":"listItem" }}' -->

@@ -1,0 +1,62 @@
+/* pages/details/details.wxss */
+page{
+  background-color:white;
+}
+.address{
+  margin-left: 26px;
+  padding: 4px;
+
+
+}
+
+
+.dizhi{
+  font-size: small;
+  position: absolute;
+
+}
+.jianjie{
+  font-size: small;
+  position: absolute;
+
+}
+.details{
+  color: white;
+  text-align:center ;
+
+background-color: lightblue;
+
+
+
+}
+
+.Name{
+
+  font-size: 19px;
+ margin-left: 30px;
+
+}
+.map {
+ padding: 10px;
+
+
+
+}
+.introduction{
+  padding: 30px;
+  color: rgb(116, 117, 118);
+  position: absolute;
+
+
+}
+.gh{
+  background-color: #98d9fffe;
+  padding: 10px;
+  margin-right: 20px;
+
+}
+.gg{
+  color: white;
+  
+}
+

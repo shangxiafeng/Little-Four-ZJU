@@ -1,0 +1,28 @@
+<view class='nav bg-gradual-blue' style='height:{{navH}}px'>
+    <view class='nav-title'>
+      用户注册
+      <image src='../../images/fanhui.png' mode='aspectFit' class='back' bindtap='navBack' style="width:52px;height:42px;"></image>
+    </view>
+</view>
+
+<view class="cu-form-group" style="margin-top:{{navH}}px">
+		<view class="title" style="width:60px;">姓名</view>
+		<input  value="{{name}}" bindinput="inputName" placeholder="请输入就诊人姓名" confirm-type="可改变"> </input>
+ </view>
+ <view class="cu-form-group" >
+		<view class="title" style="width:60px;">身份证</view>
+		<input  value="{{idCardNumber}}" bindinput="inputIdCard" placeholder="请输入就诊人身份证号码" confirm-type="可改变"> </input>
+ </view>
+ <view class="cu-form-group">
+		<view class="title" style="width:60px;">手机</view>
+    <input  value="{{mobilePhoneNumber}}" bindinput="inputPhoneNumber" placeholder="请输入您的手机号" confirm-type="可改变"> </input>
+ </view>
+ <view class="cu-form-group">
+		<view class="title" style="width:60px;">验证码</view>
+    <input  value="{{VerificationCode}}" bindinput="inputVerificationCode" placeholder="请输入验证码" confirm-type="可改变"> </input>
+    <!-- <button class="abc"  role="button" aria-disabled="false" style="{{check}};width:70px;" bindtap="getVerificationCode">{{checktext}}</button> -->
+    <button style="{{check}};width:70px" class="abc" role="button"  bindtap="getVerificationCode"><view style="color:white"> {{checktext}}</view></button>
+
+ </view>
+
+<button class="gh" bindtap="confirmRegistration" style="margin-top:20px;"><view style="color:white">  确认注册</view></button>

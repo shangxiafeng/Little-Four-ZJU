@@ -1,0 +1,68 @@
+/* pages/registrationDate/registrationDate.wxss */
+page{
+  width: 100%;
+  height: 100%;
+}
+.tab {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.navx {
+
+  height: 120rpx;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  line-height:120rpx;
+  font-size: 16px;
+  position: relative;
+
+  left: 0;
+  z-index: 99;
+
+}
+
+
+.navx-item {
+  width: 20%;
+  display: inline-block;
+  text-align: center;
+}
+
+.active {
+  color: #47bafe;
+  position: relative;
+}
+
+.active:after{
+  content: "";
+  display: block;
+  width:100%;
+  height: 5rpx;
+  border-radius: 8rpx;
+  background: #47bafe;
+  position: absolute;
+  bottom: 0;
+}
+
+.content-container {
+  height: 25%;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+/* 隐藏滚动条 */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.smaller{
+  font-size: small;
+}

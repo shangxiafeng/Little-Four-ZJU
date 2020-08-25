@@ -1,0 +1,357 @@
+.search_wrap {
+  background-color: #eee;
+  padding: 12rpx;
+}
+
+.input_wrap {
+  /* background-color: blue; */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  left: 10rpx;
+  top: 10rpx;
+}
+
+.input {
+  color:#eee;
+  font-size: 30rpx;
+  padding-left: 50rpx;
+  text-align: left;
+  display: block;
+  width: 700rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  border-radius: 12rpx;
+  background-color: #fff;
+}
+
+page {
+  background: #f5f5f5;
+}
+
+/*总体主盒子*/
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  color: f1f0f5;
+}
+
+/*左侧栏主盒子*/
+
+.nav_left {
+  position: absolute;
+  top: 40;
+  left: 0;
+  width: 25%;
+  height: 100%;
+  /*主盒子设置背景色为灰色*/
+  background:#eee;
+  text-align: center;
+}
+
+/*左侧栏list的item*/
+
+.nav_left .nav_left_items {
+  /*每个高30px*/
+  height: 60px;
+  /*垂直居中*/
+  line-height: 40px;
+  /*再设上下padding增加高度，总高42px*/
+  padding: 6px 0;
+  /*只设下边线*/
+
+  /*文字14px*/
+  font-size: 14px;
+}
+
+/*左侧栏list的item被选中时*/
+
+.nav_left .nav_left_items.active {
+  /*背景色变成白色*/
+  background: white;
+  color: #47bafe;
+
+}
+
+/*右侧栏主盒子*/
+
+.nav_right {
+
+  /*右侧盒子使用了绝对定位*/
+  position: absolute;
+  top: 0;
+  right: 0;
+  flex: 1;
+  /*宽度75%，高度占满，并使用百分比布局*/
+  width: 75%;
+  height: 1000px;
+  padding: 10px;
+  box-sizing: border-box;
+  background: #fff;
+  text-align: center;
+
+}
+
+/*右侧栏list的item*/
+
+
+
+
+
+
+.nav_right .nav_right_items text {
+  /*给text设成块级元素*/
+  height: 45rpx;
+  line-height: 45rpx;
+  display: block;
+  margin-top: 10rpx;
+  font-size: 30rpx;
+  font-style: inherit;
+  color: black;
+  /*设置文字溢出部分为...*/
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding:10rpx;
+  
+
+}
+
+.nodata_text {
+  color: black;
+  font-size: 14px;
+  text-align: center;
+}
+/* 搜索框样式 */
+  
+.view-search {
+  display: flex;
+  flex-direction: row;
+  height: 70rpx;
+  margin: 20rpx;
+  padding: 5rpx;
+  border: 1px #e4e2e2 solid;
+  border-width: thin;
+  align-items: center;
+ }
+  
+ .input {
+  flex: 1;
+  height: 60rpx;
+ }
+  
+ .input-placeholder {
+  color: #999;
+ }
+  
+ .button {
+  width: 60rpx;
+  height: 60rpx;
+ }
+ .details{
+ font-size: 36rpx;
+ color:lightblue;
+ }
+ page{
+  background-color: white;
+}
+ 
+.top {
+  width: 100%;
+  background-color: #f7f7f7;
+}
+ 
+.topsearch {
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  padding: 2% 0;
+  align-items: center;
+}
+ 
+.frame {
+  background-color: white;
+  width: 75%;
+  border-radius: 20rpx;
+  padding: 0 3%;
+}
+ 
+.frame>input {
+  font-size: 24rpx;
+  margin: 6rpx 0;
+}
+ 
+.topsearch>text {
+  width: 10%;
+  margin-left: 5%;
+  color: #a8a7a7fa;
+}
+ 
+.history {
+  background-color: white;
+  padding: 4%;
+}
+ 
+.history_title {
+  font-size: 30rpx;
+  display: flex;
+  justify-content: space-between;
+  color: #a8a7a7fa;
+  align-items: center;
+}
+ 
+.history_text {
+  padding: 4% 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+ 
+.history_text>text {
+  background-color: #f7f7f7;
+  padding: 1% 3%;
+  margin: 2%;
+  border-radius: 40rpx;
+  font-size: 30rpx;
+}
+ 
+.history_text>text:first-child{
+  margin-left: 0;
+}
+ 
+.none{
+  margin-top: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+ 
+.swiper_con {
+  width: 96%;
+  margin-left: 2%;
+  display: flex;
+  flex-wrap: wrap;
+}
+ 
+.swiper_con_view {
+  width: 48%;
+  height: 530rpx;
+  background-color: white;
+  margin: 10rpx 0;
+}
+ 
+.swiper_con_view:nth-child(even) {
+  margin-left: 4%;
+}
+ 
+.swiper_con_view_view {
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+}
+page{
+  background-color: white;
+}
+ 
+.top {
+  width: 100%;
+  background-color: #f7f7f7;
+}
+ 
+.topsearch {
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  padding: 2% 0;
+  align-items: center;
+}
+ 
+.frame {
+  background-color: white;
+  width: 75%;
+  border-radius: 20rpx;
+  padding: 0 3%;
+}
+ 
+.frame>input {
+  font-size: 24rpx;
+  margin: 6rpx 0;
+}
+ 
+.topsearch>text {
+  width: 10%;
+  margin-left: 5%;
+  color: #a8a7a7fa;
+}
+ 
+.history {
+  background-color: white;
+  padding: 4%;
+}
+ 
+.history_title {
+  font-size: 30rpx;
+  display: flex;
+  justify-content: space-between;
+  color: #a8a7a7fa;
+  align-items: center;
+}
+ 
+.history_text {
+  padding: 4% 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+ 
+.history_text>text {
+  background-color: #f7f7f7;
+  padding: 1% 3%;
+  margin: 2%;
+  border-radius: 40rpx;
+  font-size: 30rpx;
+}
+ 
+.history_text>text:first-child{
+  margin-left: 0;
+}
+ 
+.none{
+  margin-top: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+ 
+.swiper_con {
+  width: 96%;
+  margin-left: 2%;
+  display: flex;
+  flex-wrap: wrap;
+}
+ 
+.swiper_con_view {
+  width: 48%;
+  height: 530rpx;
+  background-color: white;
+  margin: 10rpx 0;
+}
+ 
+.swiper_con_view:nth-child(even) {
+  margin-left: 4%;
+}
+ 
+.swiper_con_view_view {
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+}
+

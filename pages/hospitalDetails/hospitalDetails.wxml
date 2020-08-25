@@ -1,0 +1,29 @@
+<!-- <view class="tupian"><image src="{{imgs}}"></image></view> -->
+<view class='nav bg-gradual-blue' style='height:{{navH}}px'>
+    <view class='nav-title'>
+      医院详情
+      <image src='../../images/fanhui.png' mode='aspectFit' class='back' bindtap='navBack' style="width:52px;height:42px;"></image>
+    </view>
+</view>
+
+<map id="map" class="map"
+longitude="{{hospital.location.absoluteLocation.longitude}}" 
+latitude="{{hospital.location.absoluteLocation.latitude}}" 
+scale="14" 
+controls="{{controls}}" 
+bindcontroltap="controltap" 
+bindmarkertap="markertap" 
+polyline="{{polyline}}"
+bindregionchange="regionchange" 
+ show-location 
+ style="width: 100%; height: 300px;">
+</map> 
+
+<button class="gh" bindtap="toDepartment" data-item='{{item}}' 
+style="width:25%;font-size:13px;position:absolute;right:25px; "  ><view class="gg">前往挂号</view></button>
+<view class="Name" >{{hospital.name}}</view>
+<view class="address" >{{hospital.location.place}}</view>
+
+<view  class="introduction"><text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{hospital.introduction}}</text></view>
+
+

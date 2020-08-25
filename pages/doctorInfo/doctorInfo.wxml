@@ -1,0 +1,25 @@
+<!--pages/dentistInfo/dentistInfo.wxml-->
+<view class='nav bg-gradual-blue' style='height:{{navH}}px'>
+    <view class='nav-title'>
+      医生信息
+      <image src='../../images/fanhui.png' mode='aspectFit' class='back' bindtap='navBack' style="width:52px;height:42px;"></image>
+    </view>
+</view>
+
+<block class="class1" >
+  <view style="margin-top:{{navH}}px;">
+    <icon class="iconfont icon-doctor"></icon>
+    <text>{{name}}\t</text>
+    <text>{{gender}}\t</text>
+    <text>{{age}}岁\n</text>
+    <text>{{workLocation}}\n</text>
+    <view>
+      <text>联系方式：  {{phoneNumber}}\n</text>
+      <text>教育水平：  {{education}}\n</text>
+      <text>从医时间：  {{workingTime}}年\n</text>
+      <text>主诊：      {{major}}\n</text> 
+    </view>
+  </view>
+  <button bindtap="evaluate">我要评价</button>
+  <button >联系医生</button>
+</block>

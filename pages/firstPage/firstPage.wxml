@@ -1,0 +1,13 @@
+
+<view class="content">
+
+    <image class='background' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1597876039564&di=2b15b07f66ce97ebc52703ea44fafad1&imgtype=0&src=http%3A%2F%2Fhbimg.huabanimg.com%2Fbd5a5c8eefc31d7eebaf15304bded4fa79a9707d261f0-CfymvR_fw658'mode="aspectFill"></image>
+
+</view>
+<view style="text-align:center;font-size:20pt;color:#47bafe;padding: 20px;margin-top:30px;"></view>
+
+<button bindtap="toChat"style="margin-top: 250px;background-color:#47bafe;color:GhostWhite;font-size:35rpx;" open-type="getUserInfo"	bindgetuserinfo="bindGetUserInfo">点击进入</button>
+
+<navigator style="text-align:center;font-size:28rpx;margin-top:10px;color:	LightSteelBlue;">ZJU--小四</navigator> 
+
+

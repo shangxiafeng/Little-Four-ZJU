@@ -1,0 +1,9 @@
+<!--pages/tongzhi/detail/xitong/xitong.wxml-->
+<navigator>
+<image src="/../images/通知.jfif"></image>
+<view>用药提醒</view>
+<view>您今天下午需要服用一片阿司匹林</view></navigator>
+<navigator>
+<image src="/../images/通知.jfif"></image>
+<view>预约提醒</view>
+<view>您今天下午3:00需前往浙江大学第一附属医院就诊</view></navigator>
